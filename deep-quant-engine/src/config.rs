@@ -16,6 +16,7 @@ pub struct LogConfig {
     pub color: bool,
     pub file: bool,
     pub filedir: String,
+    pub target: bool,
     pub targets: Vec<String>,
     pub level: String,
 }
@@ -27,6 +28,7 @@ impl Default for LogConfig {
             color: true,
             file: false,
             filedir: "logs".to_string(),
+            target: false,
             targets: vec![],
             level: "trace".to_string(),
         }
