@@ -23,6 +23,7 @@ debug-assertions = false
 incremental = false
 
 [workspace.dependencies]
+deep-quant-engine = { path = "./deep-quant-engine" }
 tokio = { version = "1.43", features = ["full"] }
 anyhow = { version = "1.0" }
 tracing = { version = "0.1" }

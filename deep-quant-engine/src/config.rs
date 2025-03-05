@@ -13,6 +13,7 @@ pub struct Config {
 #[serde(default)]
 pub struct LogConfig {
     pub console: bool,
+    pub color: bool,
     pub file: bool,
     pub filedir: String,
     pub targets: Vec<String>,
@@ -23,6 +24,7 @@ impl Default for LogConfig {
     fn default() -> Self {
         Self {
             console: true,
+            color: true,
             file: false,
             filedir: "logs".to_string(),
             targets: vec![],

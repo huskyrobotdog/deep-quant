@@ -14,3 +14,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { workspace = true }
+deep-quant-engine = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
