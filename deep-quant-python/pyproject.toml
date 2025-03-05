@@ -17,4 +17,4 @@ dependencies = ["pandas==2.2.3"]
 [tool.maturin]
 features = ["pyo3/extension-module"]
 python-source = "python"
-module-name = "deep_quant_python.deep_quant"
+module-name = "deep_quant.deep_quant_python"
