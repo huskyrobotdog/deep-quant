@@ -9,3 +9,9 @@ repository.workspace = true
 readme.workspace = true
 
 [dependencies]
+config = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-appender = { workspace = true }
+tracing-subscriber = { workspace = true }
