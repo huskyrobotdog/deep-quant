@@ -1,5 +1,5 @@
 [workspace]
-members = ["deep-quant-engine", "deep-quant-helper", "deep-quant-python"]
+members = ["deep-quant-engine", "deep-quant-python"]
 resolver = "2"
 
 [workspace.package]
@@ -54,3 +54,4 @@ rust_decimal_macros = { version = "1.36" }
 config = { version = "0.15", features = ["yaml"] }
 thiserror = { version = "2" }
 pyo3 = { version = "0.23.3", features = ["full"] }
+heed = { version = "0.21" }

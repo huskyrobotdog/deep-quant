@@ -7,6 +7,7 @@ use serde::Deserialize;
 pub struct Config {
     pub log: LogConfig,
     pub http: HttpConfig,
+    pub data: DataConfig,
 }
 
 #[derive(Debug, Deserialize)]
@@ -47,6 +48,20 @@ impl Default for HttpConfig {
         Self {
             connect_timeout: 5,
             idle_timeout: 5,
+        }
+    }
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(default)]
+pub struct DataConfig {
+    pub dir: String,
+}
+
+impl Default for DataConfig {
+    fn default() -> Self {
+        Self {
+            dir: "data".to_string(),
         }
     }
 }
